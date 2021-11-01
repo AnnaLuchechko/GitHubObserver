@@ -21,10 +21,10 @@ extension UIStoryboard {
         return vc
     }
     
-//    var detailViewController: DetailViewController {
-//        guard let vc = UIStoryboard.main.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {
-//            fatalError("DetailViewController couldn't be found in Storyboard file")
-//        }
-//        return vc
-//    }
+    var detailViewController: DetailViewController {
+        guard let vc = UIStoryboard.main.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {
+            fatalError("DetailViewController couldn't be found in Storyboard file")
+        }
+        return vc
+    }
 }

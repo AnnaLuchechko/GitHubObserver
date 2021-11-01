@@ -10,6 +10,7 @@ import RxSwift
 
 final class SearchViewController: DisposeViewController {
     @IBOutlet private(set) var tableView: UITableView!
+    @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     let searchController = UISearchController(searchResultsController: nil)
 }
 
@@ -33,7 +34,7 @@ extension SearchViewController: StaticFactory {
         }
         
         private static func searchControllerFactory(_ item: GitHubRepository) -> UIViewController? {
-            return nil
+            DetailViewController.Factory.default(repository: item)
         }
     }
 }

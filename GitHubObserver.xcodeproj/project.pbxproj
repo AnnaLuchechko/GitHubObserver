@@ -19,7 +19,6 @@
 		85F3E0F7272EB064006170D4 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E0F6272EB064006170D4 /* HTTPClient.swift */; };
 		85F3E0FA272EB0B5006170D4 /* GithubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E0F9272EB0B5006170D4 /* GithubRepository.swift */; };
 		85F3E0FD272EB0E3006170D4 /* UIStoryboard+ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E0FC272EB0E3006170D4 /* UIStoryboard+ViewControllers.swift */; };
-		85F3E0FF272EB113006170D4 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E0FE272EB113006170D4 /* ActivityIndicator.swift */; };
 		85F3E101272EB13D006170D4 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E100272EB13D006170D4 /* ViewModelType.swift */; };
 		85F3E105272EB376006170D4 /* GithubResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E104272EB376006170D4 /* GithubResponses.swift */; };
 		85F3E107272F1850006170D4 /* GithubApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E106272F1850006170D4 /* GithubApi.swift */; };
@@ -35,7 +34,6 @@
 		85F3E120272F4590006170D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E11F272F4590006170D4 /* AppDelegate.swift */; };
 		85F3E124272FB857006170D4 /* RxHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E123272FB856006170D4 /* RxHelpers.swift */; };
 		85F3E128272FCBD6006170D4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E127272FCBD6006170D4 /* DetailViewController.swift */; };
-		85F3E12A272FCD63006170D4 /* DetailActionBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E129272FCD63006170D4 /* DetailActionBinder.swift */; };
 		85F3E12C272FCD78006170D4 /* DetailStateBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E12B272FCD78006170D4 /* DetailStateBinder.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +53,6 @@
 		85F3E0F6272EB064006170D4 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		85F3E0F9272EB0B5006170D4 /* GithubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepository.swift; sourceTree = "<group>"; };
 		85F3E0FC272EB0E3006170D4 /* UIStoryboard+ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+ViewControllers.swift"; sourceTree = "<group>"; };
-		85F3E0FE272EB113006170D4 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		85F3E100272EB13D006170D4 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		85F3E104272EB376006170D4 /* GithubResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubResponses.swift; sourceTree = "<group>"; };
 		85F3E106272F1850006170D4 /* GithubApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubApi.swift; sourceTree = "<group>"; };
@@ -71,7 +68,6 @@
 		85F3E11F272F4590006170D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85F3E123272FB856006170D4 /* RxHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxHelpers.swift; sourceTree = "<group>"; };
 		85F3E127272FCBD6006170D4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		85F3E129272FCD63006170D4 /* DetailActionBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailActionBinder.swift; sourceTree = "<group>"; };
 		85F3E12B272FCD78006170D4 /* DetailStateBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStateBinder.swift; sourceTree = "<group>"; };
 		D869D6EE4C10310D64192F3B /* Pods_GitHubObserver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubObserver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -194,7 +190,6 @@
 				85F3E10B272F2F71006170D4 /* Binder */,
 				85F3E108272F2DDA006170D4 /* DefaultInitializable */,
 				85F3E0FC272EB0E3006170D4 /* UIStoryboard+ViewControllers.swift */,
-				85F3E0FE272EB113006170D4 /* ActivityIndicator.swift */,
 				85F3E100272EB13D006170D4 /* ViewModelType.swift */,
 				85F3E11D272F442F006170D4 /* Closure.swift */,
 			);
@@ -233,7 +228,6 @@
 			isa = PBXGroup;
 			children = (
 				85F3E127272FCBD6006170D4 /* DetailViewController.swift */,
-				85F3E129272FCD63006170D4 /* DetailActionBinder.swift */,
 				85F3E12B272FCD78006170D4 /* DetailStateBinder.swift */,
 			);
 			path = Detail;
@@ -380,12 +374,10 @@
 				85F3E0FD272EB0E3006170D4 /* UIStoryboard+ViewControllers.swift in Sources */,
 				85F3E10D272F2F81006170D4 /* DisposeViewController.swift in Sources */,
 				85F3E0E7272EAF66006170D4 /* SearchViewController.swift in Sources */,
-				85F3E12A272FCD63006170D4 /* DetailActionBinder.swift in Sources */,
 				85F3E0E9272EAF78006170D4 /* SearchStateBinder.swift in Sources */,
 				85F3E0F7272EB064006170D4 /* HTTPClient.swift in Sources */,
 				85F3E107272F1850006170D4 /* GithubApi.swift in Sources */,
 				85F3E105272EB376006170D4 /* GithubResponses.swift in Sources */,
-				85F3E0FF272EB113006170D4 /* ActivityIndicator.swift in Sources */,
 				85F3E11E272F442F006170D4 /* Closure.swift in Sources */,
 				85F3E0E3272EACC4006170D4 /* App.swift in Sources */,
 				85F3E10F272F37A9006170D4 /* SearchActionBinder.swift in Sources */,

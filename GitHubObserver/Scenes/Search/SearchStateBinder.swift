@@ -57,7 +57,10 @@ final class SearchStateBinder: ViewControllerBinder {
         let section = driver.results.map(Section.init).map({ [$0] })
         
         viewController.bag.insert(
-            driver.isLoading.drive(UIApplication.shared.rx.isNetworkActivityIndicatorVisible),
+            driver.isFetching.asObservable().observe(on: MainScheduler.instance).subscribe(onNext: { [weak self] in
+                self?.viewController.indicatorView.isHidden = !$0
+                self?.viewController.tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: $0 ? 50 : 0, right: 0)
+            }),
             section.drive(viewController.tableView.rx.items(dataSource: dataSource))
         )
     }

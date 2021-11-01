@@ -8,6 +8,7 @@ target 'GitHubObserver' do
   # Pods for GitHubObserver
     pod 'RxSwift'
     pod 'RxCocoa'
+    pod 'RxWebKit'
     pod 'RxViewController'
     pod 'RxDataSources'
 
