@@ -29,7 +29,7 @@ final class GithubApi: GithubApiProvider {
     }
     
     func fetchRepositories(with query: String, page: Int?, perPage: Int?, completion: @escaping (Bool) -> ()?) -> Observable<GithubRepositoriesResponse?> {
-        return httpClient.get(url: "\(baseURL)/search/repositories?q=\(query)&page=\(page ?? 1)&per_page=\(perPage ?? 30)").map { data -> GithubRepositoriesResponse? in
+        return httpClient.get(url: "\(baseURL)/search/repositories?q=\(query)&sort=stars&page=\(page ?? 1)&per_page=\(perPage ?? 30)").map { data -> GithubRepositoriesResponse? in
                 guard let data = data, let response = try? JSONDecoder().decode(GithubRepositoriesResponse.self, from: data) else {
                     completion(false)
                     return nil
