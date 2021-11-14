@@ -19,7 +19,6 @@
 		85F3E0F7272EB064006170D4 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E0F6272EB064006170D4 /* HTTPClient.swift */; };
 		85F3E0FA272EB0B5006170D4 /* GithubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E0F9272EB0B5006170D4 /* GithubRepository.swift */; };
 		85F3E0FD272EB0E3006170D4 /* UIStoryboard+ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E0FC272EB0E3006170D4 /* UIStoryboard+ViewControllers.swift */; };
-		85F3E101272EB13D006170D4 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E100272EB13D006170D4 /* ViewModelType.swift */; };
 		85F3E105272EB376006170D4 /* GithubResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E104272EB376006170D4 /* GithubResponses.swift */; };
 		85F3E107272F1850006170D4 /* GithubApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E106272F1850006170D4 /* GithubApi.swift */; };
 		85F3E10A272F2DE5006170D4 /* StaticFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E109272F2DE5006170D4 /* StaticFactory.swift */; };
@@ -53,7 +52,6 @@
 		85F3E0F6272EB064006170D4 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		85F3E0F9272EB0B5006170D4 /* GithubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepository.swift; sourceTree = "<group>"; };
 		85F3E0FC272EB0E3006170D4 /* UIStoryboard+ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+ViewControllers.swift"; sourceTree = "<group>"; };
-		85F3E100272EB13D006170D4 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		85F3E104272EB376006170D4 /* GithubResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubResponses.swift; sourceTree = "<group>"; };
 		85F3E106272F1850006170D4 /* GithubApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubApi.swift; sourceTree = "<group>"; };
 		85F3E109272F2DE5006170D4 /* StaticFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFactory.swift; sourceTree = "<group>"; };
@@ -190,7 +188,6 @@
 				85F3E10B272F2F71006170D4 /* Binder */,
 				85F3E0FC272EB0E3006170D4 /* UIStoryboard+ViewControllers.swift */,
 				85F3E109272F2DE5006170D4 /* StaticFactory.swift */,
-				85F3E100272EB13D006170D4 /* ViewModelType.swift */,
 				85F3E11D272F442F006170D4 /* Closure.swift */,
 			);
 			path = Utils;
@@ -374,7 +371,6 @@
 				85F3E0E3272EACC4006170D4 /* App.swift in Sources */,
 				85F3E10F272F37A9006170D4 /* SearchActionBinder.swift in Sources */,
 				85F3E0EF272EAFB6006170D4 /* RepositoryCell.swift in Sources */,
-				85F3E101272EB13D006170D4 /* ViewModelType.swift in Sources */,
 				85F3E11A272F4184006170D4 /* Transitioning.swift in Sources */,
 				85F3E111272F37C7006170D4 /* SearchDriver.swift in Sources */,
 				85F3E114272F38FF006170D4 /* Driver.swift in Sources */,
