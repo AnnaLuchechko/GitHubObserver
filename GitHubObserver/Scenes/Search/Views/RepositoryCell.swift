@@ -17,7 +17,7 @@ class RepositoryCell: UITableViewCell {
     }
     
     func configure(item: GitHubRepository) {
-        titleLabel.text = item.fullName
+        titleLabel.text = item.name
         starsCount.text = "\(item.stargazersCount)"
     }
 }
