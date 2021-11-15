@@ -10,18 +10,20 @@ import UIKit
 class RepositoryCell: UITableViewCell {
     
     @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var starsCount: UILabel!
     
     override func awakeFromNib() {
         selectionStyle = .none
     }
     
-    func configure(title: String) {
-        titleLabel.text = title
+    func configure(item: GitHubRepository) {
+        titleLabel.text = item.fullName
+        starsCount.text = "\(item.stargazersCount)"
     }
 }
 
 extension RepositoryCell {
     func configure(withRepositoryItem item: GitHubRepository) {
-        configure(title: item.name)
+        configure(item: item)
     }
 }
