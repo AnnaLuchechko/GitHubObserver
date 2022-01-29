@@ -11,6 +11,8 @@
 		850C54FD272EA3CF0013BC05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850C54FB272EA3CF0013BC05 /* Main.storyboard */; };
 		850C54FF272EA3DE0013BC05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850C54FE272EA3DE0013BC05 /* Assets.xcassets */; };
 		850C5502272EA3DE0013BC05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850C5500272EA3DE0013BC05 /* LaunchScreen.storyboard */; };
+		85C4548027A54D9200413080 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C4547F27A54D9200413080 /* DetailView.swift */; };
+		85C4548227A54E9200413080 /* DisposeHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C4548127A54E9200413080 /* DisposeHostingViewController.swift */; };
 		85F3E0E3272EACC4006170D4 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E0E2272EACC4006170D4 /* App.swift */; };
 		85F3E0E7272EAF66006170D4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E0E6272EAF66006170D4 /* SearchViewController.swift */; };
 		85F3E0E9272EAF78006170D4 /* SearchStateBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3E0E8272EAF78006170D4 /* SearchStateBinder.swift */; };
@@ -44,6 +46,8 @@
 		850C54FE272EA3DE0013BC05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		850C5501272EA3DE0013BC05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		850C5503272EA3DE0013BC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C4547F27A54D9200413080 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		85C4548127A54E9200413080 /* DisposeHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposeHostingViewController.swift; sourceTree = "<group>"; };
 		85F3E0E2272EACC4006170D4 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		85F3E0E6272EAF66006170D4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		85F3E0E8272EAF78006170D4 /* SearchStateBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStateBinder.swift; sourceTree = "<group>"; };
@@ -113,6 +117,14 @@
 				850C5503272EA3DE0013BC05 /* Info.plist */,
 			);
 			path = GitHubObserver;
+			sourceTree = "<group>";
+		};
+		85C4547E27A54D7700413080 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85C4547F27A54D9200413080 /* DetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		85F3E0E1272EACAA006170D4 /* Application */ = {
@@ -200,6 +212,7 @@
 				85F3E115272F3E31006170D4 /* ViewControllerBinder.swift */,
 				85F3E117272F4157006170D4 /* NavigationBinder.swift */,
 				85F3E119272F4184006170D4 /* Transitioning.swift */,
+				85C4548127A54E9200413080 /* DisposeHostingViewController.swift */,
 			);
 			path = Binder;
 			sourceTree = "<group>";
@@ -216,6 +229,7 @@
 		85F3E126272FCBC3006170D4 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				85C4547E27A54D7700413080 /* View */,
 				85F3E127272FCBD6006170D4 /* DetailViewController.swift */,
 				85F3E12B272FCD78006170D4 /* DetailStateBinder.swift */,
 			);
@@ -358,6 +372,7 @@
 				85F3E120272F4590006170D4 /* AppDelegate.swift in Sources */,
 				85F3E128272FCBD6006170D4 /* DetailViewController.swift in Sources */,
 				85F3E0FA272EB0B5006170D4 /* GithubRepository.swift in Sources */,
+				85C4548227A54E9200413080 /* DisposeHostingViewController.swift in Sources */,
 				85F3E116272F3E31006170D4 /* ViewControllerBinder.swift in Sources */,
 				85F3E10A272F2DE5006170D4 /* StaticFactory.swift in Sources */,
 				85F3E0FD272EB0E3006170D4 /* UIStoryboard+ViewControllers.swift in Sources */,
@@ -372,6 +387,7 @@
 				85F3E10F272F37A9006170D4 /* SearchActionBinder.swift in Sources */,
 				85F3E0EF272EAFB6006170D4 /* RepositoryCell.swift in Sources */,
 				85F3E11A272F4184006170D4 /* Transitioning.swift in Sources */,
+				85C4548027A54D9200413080 /* DetailView.swift in Sources */,
 				85F3E111272F37C7006170D4 /* SearchDriver.swift in Sources */,
 				85F3E114272F38FF006170D4 /* Driver.swift in Sources */,
 				85F3E12C272FCD78006170D4 /* DetailStateBinder.swift in Sources */,

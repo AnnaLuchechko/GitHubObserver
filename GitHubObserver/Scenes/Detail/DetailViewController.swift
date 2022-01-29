@@ -6,20 +6,17 @@
 //
 
 import UIKit
-import RxCocoa
-import RxSwift
-import WebKit
-import RxWebKit
+import SwiftUI
 
-final class DetailViewController: DisposeViewController {
+final class DetailViewController: DisposeHostingViewController<DetailView> {
     @IBOutlet private(set) var indicatorView: UIActivityIndicatorView!
-    @IBOutlet private(set) var webView: WKWebView!
+
 }
 
 extension DetailViewController: StaticFactory {
     enum Factory {
         static func`default`(repository: GitHubRepository) -> DetailViewController {
-            let vc = UIStoryboard.main.detailViewController
+            let vc = DetailViewController(rootView: DetailView(repository: repository))
             let stateBinder = DetailStateBinder(viewController: vc, repository: repository)
             vc.bag.insert(stateBinder)
             return vc

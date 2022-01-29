@@ -23,13 +23,13 @@ final class DetailStateBinder: ViewControllerBinder {
         viewController.statusBarStyle = .lightContent
         viewController.navigationItem.title = repository.name
         
-        viewController.webView.load(URLRequest(url: repository.url))
-        
-        _ = viewController.webView.rx.didFinishLoad.subscribe(onNext: { [weak self] _ in
-            self?.viewController.indicatorView.isHidden = true
-        }).disposed(by: viewController.bag)
-        _ = viewController.webView.rx.didStartLoad.subscribe(onNext: { [weak self] _ in
-            self?.viewController.indicatorView.isHidden = false
-        }).disposed(by: viewController.bag)
+//        viewController.webView.load(URLRequest(url: repository.url))
+//
+//        _ = viewController.webView.rx.didFinishLoad.subscribe(onNext: { [weak self] _ in
+//            self?.viewController.indicatorView.isHidden = true
+//        }).disposed(by: viewController.bag)
+//        _ = viewController.webView.rx.didStartLoad.subscribe(onNext: { [weak self] _ in
+//            self?.viewController.indicatorView.isHidden = false
+//        }).disposed(by: viewController.bag)
     }
 }
