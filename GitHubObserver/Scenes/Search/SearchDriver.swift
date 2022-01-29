@@ -26,6 +26,8 @@ final class SearchDriver: SearchDriving {
     private var totalCount: Int?
     private var previousQuery = ""
     private var searchBag = DisposeBag()
+    
+    private weak var searchTimer: Timer?
 
     private let api: GithubApiProvider
     
@@ -38,8 +40,26 @@ final class SearchDriver: SearchDriving {
     }
     
     func search(_ query: String) {
+        searchTimer?.invalidate()
+        searchTimer = Timer.scheduledTimer(withTimeInterval: 2, repeats: false)
+        { _ in
+            self.searchGitHub(query)
+        }
+    }
+    
+    func fetchMore() {
+        guard !previousQuery.isEmpty, !isFetching.value, let totalCount = totalCount, let currentCount = resultsRelay.value?.count, currentCount < totalCount else { return }
+        print("load more? currentCount \(currentCount), totalCount \(totalCount)")
+        search(previousQuery)
+    }
+    
+    func select(_ model: GitHubRepository) {
+        didSelectRelay.accept(model)
+    }
+    
+    private func searchGitHub(_ query: String) {
         searchBag = DisposeBag()
-
+        
         guard query.count >= 3 else {
             resultsRelay.accept([])
             return
@@ -60,16 +80,6 @@ final class SearchDriver: SearchDriving {
                 self?.resultsRelay.accept(oldData + value.items)
             }
         }).disposed(by: searchBag)
-    }
-    
-    func fetchMore() {
-        guard !previousQuery.isEmpty, !isFetching.value, let totalCount = totalCount, let currentCount = resultsRelay.value?.count, currentCount < totalCount else { return }
-        print("load more? currentCount \(currentCount), totalCount \(totalCount)")
-        search(previousQuery)
-    }
-    
-    func select(_ model: GitHubRepository) {
-        didSelectRelay.accept(model)
     }
     
 }
